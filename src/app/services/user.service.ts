@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { User } from '../shared/user';
-import { UserExists } from '../shared/UserExists';
+import { UserExists } from '../shared/userExists';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
