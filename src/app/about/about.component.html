@@ -1,0 +1,81 @@
+<div class="container"
+  fxLayout="column"
+  fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+        <h3>About Us</h3>
+        <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <div fxLayout="column" fxLayout.gt-sm="row">
+      <div fxFlex="70">
+        <h2>Our Project</h2>
+        <p>Our Project consists of developing and improving on the Smart Health care Systems that will help individuals to monitor their vitals such as:
+        </p>
+         <ul>
+              <li>Heart Rate</li>
+              <li>Blood Pressure</li>
+              <li>Pulse Oxygen level</li>
+              <li>Temperature</li>
+        </ul>
+        <p>
+          Our group project consists of integrating data from a IOT device ( Node MCU) and 
+          uploading the data to the database which is later fetched by the server on request and displayed on the website after the user logs in using the right credentials wwhich is checked by a auth service.The data displayed data can be used to derive infereces regarding the medical conditions of the user and aid them in taking the proper precautions and treatment.Also the User will have the locations of the nearby hospitals based on the gps data recieved from the gps module of the Node MCU.(Application of Neural Networks is in Progress) </p>
+      </div>
+      <div fxFlex="30">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>
+            <h2>Timeline</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <dl>
+              <dt>Planning</dt>
+              <dd>August. 2020</dd>
+              <dt>Research</dt>
+              <dd>September 2020 </dd>
+              <dt>Implementation</dt>
+              <dd>September-October 2020 </dd>
+            </dl>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  
+  <div fxFlex>
+    <mat-card>
+      <blockquote>
+        <h3>“The human body has been designed to resist an infinite number of changes and attacks brought about by its environment. The secret of good health lies in successful adjustment to changing stresses on the body.” </h3>
+        <footer>– Harry J. Johnson
+          <cite>6 July 1945 – 3 April 2013</cite>
+        </footer>
+      </blockquote>
+    </mat-card>
+  </div>
+
+
+<!--<div fxFlex>
+    <h2>Team Members</h2>
+    <mat-list *ngIf="leaders" [@expand]>
+        <mat-list-item *ngFor="let leader of leaders">
+          <img mat-list-avatar src="{{ baseURL + leader.image }}" alt={{leader.name}}>
+          <h4 matLine> {{leader.name}} {{leader.abbr}}</h4>
+            <p matLine> {{leader.designation}}</p>
+            <p matLine>{{leader.description}}
+            </p>
+        </mat-list-item>
+      </mat-list>
+      <div [hidden]="leaders || errMess">
+          <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+      </div>
+      <div *ngIf="errMess">
+        <h2>Error</h2>
+        <h4>{{errMess}}</h4>
+      </div>
+  </div>
+</div> 
